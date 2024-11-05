@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTrek Cashback</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> <!-- Fonte Montserrat -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body class="bg-light">
+    <div id="popup" class="container bg-white p-4 rounded shadow">
+        <h1 id="user-name" class="text-center">Carregando...</h1>
+        <img id="user-avatar" src="" alt="Avatar do usuário" class="img-fluid rounded-circle mx-auto d-block" style="width: 100px; height: 100px;">
+        <p id="cashback-balance" class="text-center font-weight-bold"></p>
+        
+        <h2 class="mt-4">Pesquise Cupons:</h2>
+        <input type="text" id="coupon-search" class="form-control mb-3" placeholder="Digite o código do cupom...">
+        
+        <h2>Top Cupons:</h2>
+        <ul id="coupon-list" class="list-unstyled"></ul>
+
+        <div class="menu mt-4">
+            <table class="table table-borderless w-100">
+                <tr>
+                    <td class="text-center">
+                        <a href="LINK1" class="menu-link btn btn-link text-dark" style="padding: 10px; width: 100%;">
+                            <i class="fas fa-home icon"></i> Início
+                        </a>
+                    </td>
+                    <td class="text-center">
+                        <a href="LINK2" class="menu-link btn btn-link text-dark" style="padding: 10px; width: 100%;">
+                            <i class="fas fa-share-alt icon"></i> Indique
+                        </a>
+                    </td>
+                    <td class="text-center">
+                        <a href="LINK3" class="menu-link btn btn-link text-dark" style="padding: 10px; width: 100%;">
+                            <i class="fas fa-user icon"></i> Conta
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

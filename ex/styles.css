@@ -1,0 +1,24 @@
+body {
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+}
+
+.menu-link {
+    display: flex;
+    align-items: center; /* Alinha ícone e texto */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.icon {
+    width: 24px; /* Tamanho do ícone */
+    height: 24px;
+    margin-right: 10px; /* Espaço entre ícone e texto */
+}
+
+#user-name {
+    font-size: 2em; /* Nome do usuário maior */
+}
+
+#cashback-balance {
+    font-size: 1.5em; /* Aumenta o tamanho do saldo */
+    color: #FF4500; /* Laranja avermelhado */
+}

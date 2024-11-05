@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "MTrek Cashback",
+  "version": "1.0",
+  "description": "Extensão para gerenciar cashback e cupons.",
+  "permissions": [
+      "storage",
+      "activeTab",
+      "scripting" // Permissão para injetar scripts de conteúdo
+  ],
+  "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "16": "./mtrek.PNG",
+          "48": "./mtrek.PNG",
+          "128": "./mtrek.PNG"
+      }
+  },
+  "background": {
+      "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+        "matches": ["*://www.mercadolivre.com.br/*"], // Altere para o domínio correto
+        "js": ["content.js"]
+    }
+  ]
+}
